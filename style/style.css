@@ -1,0 +1,233 @@
+.Background {
+  display: block;
+  width: 1684px;
+  height: 935px;
+}
+
+.Reze {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 390px;
+  filter: drop-shadow(3px 28px 2px rgba(55, 125, 133, 0.8));
+}
+
+.Spear1 {
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+.Spear1.active {
+  opacity: 1;
+}
+.Spear1 img {
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: -90px;
+  right: 0px;
+}
+
+.Spear2 {
+  opacity: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+.Spear2.active {
+  opacity: 1;
+}
+.Spear2 img {
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: -199px;
+  left: 256px;
+}
+
+.Nowave {
+  display: block;
+  width: 1684px;
+  position: absolute;
+  top: 0;
+
+  animation-name: movement;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.Wave {
+  display: block;
+  width: 1684px;
+  position: absolute;
+  top: 0;
+
+  animation-name: Wmovement;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.Mwave {
+  position: absolute;
+  top: 216px;
+  left: 607px;
+
+  animation-name: Mmove;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.Move1 {
+  position: absolute;
+  top: 498px;
+  left: 1052px;
+
+  animation-name: move1;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.Move2 {
+  position: absolute;
+  top: 266px;
+  left: 400px;
+
+  animation-name: move2;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -65px;
+  }
+  70% {
+    top: -65px;
+  }
+  100% {
+    top: 15px;
+  }
+}
+
+@keyframes Wmovement {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -43px;
+  }
+  100% {
+    top: 22px;
+  }
+}
+
+@keyframes move1 {
+  0% {
+    top: 498px;
+  }
+  50% {
+    top: 455px;
+  }
+  100% {
+    top: 520px;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    top: 266px;
+  }
+  50% {
+    top: 223px;
+  }
+  100% {
+    top: 288px;
+  }
+}
+
+@keyframes Mmove {
+  0% {
+    top: 216px;
+  }
+  50% {
+    top: 173px;
+  }
+  100% {
+    top: 238px;
+  }
+}
+
+.Title {
+  display: block;
+  position: absolute;
+  bottom: 80px;
+  left: 530px;
+}
+
+.Sub {
+  position: absolute;
+  width: 753px;
+  height: 247px;
+  background-color: rgb(105, 95, 95);
+  border-radius: 20px;
+  bottom: -4px;
+  left: -56px;
+
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.Smr {
+  position: absolute;
+  width: 457px;
+  height: 548px;
+  background-color: rgb(182, 94, 94);
+  border-radius: 20px;
+  bottom: 262px;
+  left: -365px;
+
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.subT {
+  position: absolute;
+  width: 730px;
+  height: 250px;
+}
+
+.Title:hover .Sub {
+  opacity: 1;
+}
+
+.Title:hover .Sub .Smr {
+  opacity: 1;
+}
+
+.Text {
+  position: absolute;
+  bottom: 20px;
+  left: 752px;
+}
+
+.Girl {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
